@@ -20,7 +20,7 @@ class SalaoDatabase:
             "host": host or os.getenv("DB_HOST", "localhost"),
             "port": port or int(os.getenv("DB_PORT", "3306")),
             "user": user or os.getenv("DB_USER", "root"),
-            "password": password if password is not None else os.getenv("DB_PASSWORD", "!Gustavo2108"),
+            "password": password if password is not None else os.getenv("DB_PASSWORD", "Mude este texto para a senha do MYSQL"),
             "database": database or os.getenv("DB_NAME", "salao_beleza"),
         }
         self.connection: Optional[mysql.connector.MySQLConnection] = None
